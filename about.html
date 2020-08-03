@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于你</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	</head>
+	<body>
+		<!--妙语连珠是猎物,支支吾吾是喜欢。--> 
+		
+		<div id="music"></div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				//存放音乐列表，根据音乐文件路径，进行填写
+				var musicList = ["music/want.mp3", "music/want.mp3"]
+				playMusic(musicList);
+			}
+
+			function playMusic(musicList) {
+				var myAudio = new Audio();
+				//是否进行预加载
+				myAudio.preload = false;
+				//是否显示隐藏按钮
+				myAudio.controls = true;
+				myAudio.hidden = true;
+				//从音乐列表中，获取最后一个音乐（并删除）
+				var src = musicList.pop();
+				myAudio.src = src;
+				//将最后一个音乐添加到数组的开头，这样实现循环
+				musicList.unshift(src);
+				//绑定音乐结束事件，当音乐播放完成后，将会触发playEndedHandler方法
+				myAudio.addEventListener("ended", playEndedHandler, false);
+				//播放当前音乐
+				myAudio.play();
+				document.getElementById("music").appendChild(myAudio);
+				//将循环播放关闭，如果开启，将不能触发playEndedHandler方法，只能进行单曲循环
+				myAudio.loop = false;
+
+				function playEndedHandler() {
+					src = musicList.pop();
+					myAudio.src = src;
+					musicList.unshift(src);
+					myAudio.play();
+				}
+			}
+		</script>
+	</body>
+</html>
