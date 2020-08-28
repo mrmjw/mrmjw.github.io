@@ -1,0 +1,29 @@
+/*!
+ * 
+ * CH：币报道重置样式！
+ * EN：Resetting style of currency report.
+ * 
+ * 
+ * Date: 2018-4-21
+ * bibaodao.com  © 2013-2017 All Rights Reserved
+ * 
+ */
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;word-wrap:break-word}
+/* body,html,input{font:12px/1.5 tahoma,arial,\5FAE\8F6F\96C5\9ED1,Microsoft YaHei !important;} */
+html {-webkit-text-size-adjust:none;}
+table{empty-cells:show;border-collapse:collapse;border-spacing:0;}
+img{border:none}
+pre {white-space: pre-wrap; /* css-3 */white-space: -moz-pre-wrap; /* Mozilla, since 1999 */white-space: -pre-wrap; /* Opera 4-6 */white-space: -o-pre-wrap; /* Opera 7 */	word-wrap: break-word; /* Internet Explorer 5.5+ */}
+input,label,img,th{vertical-align:middle;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+ul,ol,li{list-style:none;}
+a,a:hover,a:focus{text-decoration:none;}
+textarea { resize:none; }
+em,cite,i{ font-style:normal; }
+div{box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+button,a{outline:none;}
+/*transition:all .5s ease;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;*/
+.cl:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.cl { zoom:1; }
