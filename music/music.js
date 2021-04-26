@@ -6,13 +6,7 @@ const player = new APlayer({
     mutex: true,
     theme: '#ad7a86',
     order: 'list',
-    audio: [{
-        name: '等你归来',
-        artist: '程响',
-        url: 'http://music.ruoyi.vip/dengniguilai',
-        cover: './music/cover/chengxiang.jpg',
-        theme: '#ebd0c2'
-    }, {
+    audio: [ {
         name: '虞兮叹',
         artist: '闻人听書',
         url: 'http://music.ruoyi.vip/yuxitan',
@@ -41,30 +35,6 @@ const player = new APlayer({
         artist: '王赫野',
         url: 'http://music.ruoyi.vip/dafengchui',
         cover: './music/cover/dafengchui.jpg',
-        theme: '#46718b'
-    }, {
-        name: '灵灵',
-        artist: '张冬玲',
-        url: 'http://music.ruoyi.vip/lingling',
-        cover: './music/cover/lingling.jpg',
-        theme: '#ebd0c2'
-    }, {
-        name: '弃佛入魔',
-        artist: '残雪',
-        url: 'http://music.ruoyi.vip/qifurumo',
-        cover: './music/cover/qifurumo.jpg',
-        theme: '#46718b'
-    }, {
-        name: '求魔',
-        artist: '残雪',
-        url: 'http://music.ruoyi.vip/qiumo',
-        cover: './music/cover/qiumo.jpg',
-        theme: '#46718b'
-    }, {
-        name: '渡我不渡她',
-        artist: '残雪',
-        url: 'http://music.ruoyi.vip/duwobuduta',
-        cover: './music/cover/duwobuduta.jpg',
         theme: '#46718b'
     }, {
         name: '察觉',
